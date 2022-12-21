@@ -94,14 +94,9 @@ const timeStart = (e) => {
       hourCount = 0;
     }
 
-<<<<<<< HEAD
-    // Window opening caused by the user in seconds, minutes, hours
-=======
-    // ! Запуск функції з  винесенням налаштуваннь таймеру окремо
 
-    // ?=======================================
-    // Відкриття вікна, завдане користувачем по секундам хвилинам годинам
->>>>>>> c54c7196918a51d9861e318ce0256107ed34c904
+    // Window opening caused by the user in seconds, minutes, hours
+
     if (secondCount >= second && minutCount >= minute && hourCount >= hour) {
       clearInterval(timeStop);
       minutCount = 0;
