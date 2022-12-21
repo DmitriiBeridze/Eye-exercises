@@ -1,10 +1,8 @@
 // popup variables
 let windowOpen = document.getElementById("js-windowCounter");
 
-// let audio = document.getElementById("js-signal");
 let aud = new Audio("./sound/Priyatnoe_SMS_(ringon.site).mp3");
 
-// let milisec = JSON.parse(localStorage.getItem("time"));
 let timeStop;
 
 // slider variables
@@ -26,46 +24,6 @@ let hourCount = 0;
 // time settings variables
 const timerSettingsContainer = document.getElementById("js-timerSettings");
 
-// ! Варіант з винесенням налаштуваннь таймеру в окрему функцію==============
-// function timeSettings(form) {
-//   let settValue = new FormData(form);
-//   let h = settValue.get("hour");
-//   let m = settValue.get("minut");
-//   let s = settValue.get("second");
-//   if (!s) {
-//     s = false;
-//   }
-//   if (!m) {
-//     m = false;
-//   }
-//   if (!h) {
-//     h = false;
-//   }
-//   let objTime = {
-//     second: s,
-//     minute: m,
-//     hour: h,
-//   };
-
-//   if (
-//     secondCount >= objTime.second &&
-//     minutCount >= objTime.minute &&
-//     hourCount >= objTime.hour
-//   ) {
-//     clearInterval(timeStop);
-//     minutCount = 0;
-//     secondCount = 0;
-//     hourCount = 0;
-//     minutContainer.textContent = `0${minutCount}`;
-//     secondContainer.textContent = `0${secondCount}`;
-//     hourContainer.textContent = `0${hourCount}`;
-//     // milisec = null;
-//     windowOpen.classList.add("open");
-//     aud.play();
-//   }
-
-//   console.log(objTime);
-// }
 // !=====================================================
 
 //colon add remove function
@@ -109,11 +67,6 @@ const timeStart = (e) => {
   timeStop = setInterval(() => {
     milisec++;
 
-    // ! Timer===============================================
-    // milisec = localStorage.getItem("time");
-    // let miliseconds = localStorage.getItem("time");
-    // milisec++;
-
     if (milisec > 99) {
       secondCount++;
       colon();
@@ -140,8 +93,6 @@ const timeStart = (e) => {
 
     // ! Запуск функції з  винесенням налаштуваннь таймеру окремо
 
-    // timeSettings(timerSettingsContainer);
-
     // ?=======================================
     // Відкриття вікна, завдане користувачем по секундам хвилинам годинам
     if (secondCount >= second && minutCount >= minute && hourCount >= hour) {
@@ -157,17 +108,8 @@ const timeStart = (e) => {
       // unblocked start button
       document.querySelector(".openExercise").disabled = "false";
     }
-    // ?==================================
-    // // stop counter
 
-    // document.getElementById("js-stopCounter").addEventListener("click", () => {
-    //   clearInterval(timeStop);
-    //   // unblocked start button
-    //   document.querySelector(".openExercise").disabled = "false";
-    //   console.log(document.querySelector(".openExercise"));
-    // });
-
-    //? slider lenght
+    // slider lenght
     lenght = 0;
   }, 10);
 
@@ -189,13 +131,6 @@ document.getElementById("js-resetCounter").addEventListener("click", () => {
   hourContainer.textContent = "00";
 });
 
-// lenght
-
-// let width;
-// for (const elem of sliderItem) {
-//   width = elem.offsetWidth;
-//   console.log(width);
-// }
 let width = 760;
 
 // let slideContainer = document.querySelector(".contentContainer").offsetWidth;
@@ -226,10 +161,6 @@ for (const button of sliderButtons) {
             if (elem.dataset.action == slideCounter) {
               elem.classList.add("move-text");
             } else elem.classList.remove("move-text");
-
-            // setTimeout(() => {
-            //   elem.classList.remove("move-text");
-            // }, 1000);
           });
         }, 800);
       }
@@ -251,10 +182,6 @@ for (const button of sliderButtons) {
             if (elem.dataset.action == slideCounter) {
               elem.classList.add("move-text");
             } else elem.classList.remove("move-text");
-
-            // setTimeout(() => {
-            //   elem.classList.remove("move-text");
-            // }, 1000);
           });
         }, 800);
       }
