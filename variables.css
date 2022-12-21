@@ -1,12 +1,17 @@
 /* colors */
 :root{
     --col-green:#47aa57;
+    --col-green2:#2d773a;
     --col-orange:#ff692a;
+    --col-light-orange:#fd9466;
+    --col-orange2:#da5d28;
     --col-light-yellow:#f3e783;
     --col-yellow:#fdca19;
     --col-blue:#036aac;
     --col-light-blue:#00b5d4;
     --col-grey:#303030;
+    --col-semi-gray:rgb(71, 70, 70);
+    --col-light-gray:rgb(100, 99, 99);
     --col-black:#06050a;
     --col-whitw:#ffffff;
 

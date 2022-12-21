@@ -5,45 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- favicon -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <!-- <meta name="theme-color" content="#ffffff" /> -->
+
+    <!-- ------------------------------- -->
     <link rel="stylesheet" href="./icon/arrowBtn/css/fontello.css" />
     <link rel="stylesheet" href="./variables.css" />
     <link rel="stylesheet" href="./eye.css" />
   </head>
   <body>
     <!--  -->
-    <button class="openExercise">OPEN</button>
+
     <div class="openWindow" id="js-windowCounter">
       <div class="contentContainer">
-        <!-- button -->
-        <div class="slider__buttons">
-          <div class="slider-button slider-backward__button" data-moove="back">
-            <!-- <div class="icon__container"> -->
-            <i class="arrow icon-left-dir"></i>
-            <!-- </div> -->
-          </div>
-
-          <div class="slider-button slider-forward__button" data-moove="forv">
-            <!-- <div class="icon__container"> -->
-            <i class="arrow icon-right-dir"></i>
-            <!-- </div> -->
-          </div>
-        </div>
         <!-- slider -->
+
+        <!-- slider button -->
+        <div class="slider-button slider-backward__button" data-moove="back">
+          <i class="arrow icon-left-dir"></i>
+        </div>
+        <div class="slider-button slider-forward__button" data-moove="forv">
+          <i class="arrow icon-right-dir"></i>
+        </div>
+
         <div class="slider__container" id="js-sliderBody">
           <!-- slide1 -->
           <div class="slider__exercise">
             <div class="slider__image">
               <img src="./img/1.png" alt="" />
             </div>
-            <div class="text-content">
-              <div class="slider__exercise-header">
-                <h3>Вправа 1</h3>
-                <div class="slider__exercise-name">Вдивляємося в темряву</div>
-              </div>
-              <div class="slider__exercise-description">
-                Обіпріться на лікті й закрийте очі. Закрийте очі
-                пальцями,вдивляючись в темряву. Розслабтеся побудьте в такому
-                положенні 1-3 хвилини.
+            <div
+              class="text-content__background"
+              id="js-contentBackground"
+              data-action="1"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 1</h3>
+                  <div class="slider__exercise-name">Вдивляємося в темряву</div>
+                </div>
+                <div class="slider__exercise-description">
+                  Обіпріться на лікті й закрийте очі. Закрийте очі
+                  пальцями,вдивляючись в темряву. Розслабтеся побудьте в такому
+                  положенні 1-3 хвилини.
+                </div>
               </div>
             </div>
           </div>
@@ -52,15 +59,25 @@
             <div class="slider__image">
               <img src="./img/2.png" alt="" />
             </div>
-            <div class="text-content">
-              <div class="slider__exercise-header">
-                <h3>Вправа 2</h3>
-                <div class="slider__exercise-name">Вдивляємося в темряву</div>
-              </div>
-              <div class="slider__exercise-description">
-                Обіпріться на лікті й закрийте очі. Закрийте очі
-                пальцями,вдивляючись в темряву. Розслабтеся побудьте в такому
-                положенні 1-3 хвилини.
+            <div
+              class="text-content__background"
+              id="js-contentBackground"
+              data-action="2"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 2</h3>
+                  <div class="slider__exercise-name">
+                    Переміщуємо погляд з боку в бік
+                  </div>
+                </div>
+                <div class="slider__exercise-description">
+                  Сядьте або встаньте прямо. Дивіться прямо перед собою. Не
+                  рухаючи головою, подивіться ліворуч. Сфокусуйте погляд на
+                  тому, що ви бачите. Потім подивіться праворуч. Сфокусуйте
+                  погляд та тому, що ви бачите. Переміщуйте погляд таким чином з
+                  боку в бік 5 раз. Повторіть цикл 3 рази.
+                </div>
               </div>
             </div>
           </div>
@@ -70,17 +87,25 @@
             <div class="slider__image">
               <img src="./img/3.png" alt="" />
             </div>
-            <div class="text-content">
-              <div class="slider__exercise-header">
-                <h3>Вправа 3</h3>
-                <div class="slider__exercise-name">Вдивляємося в темряву</div>
-              </div>
-              <div class="slider__exercise-description">
-                Обіпріться на лікті й закрийте очі. Закрийте очі
-                пальцями,вдивляючись в темряву. Розслабтеся побудьте в такому
-                положенні 1-3
-                хвилини.;sdfus;f;of;oipfjpklf]p[sdlf]\[gdl]\[fklbd]pfkb]dpf[lg
-                [fdl\f;lkbv'd\bk'dpfkbdfpkbfdk'bl;fkldk'fl]
+            <div
+              class="text-content__background"
+              id="js-contentBackground"
+              data-action="3"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 3</h3>
+                  <div class="slider__exercise-name">
+                    Переміщуємо погляд знизу вгору і навпаки
+                  </div>
+                </div>
+                <div class="slider__exercise-description">
+                  Сядьте або встаньте прямо. Дивіться прямо перед собою. Не
+                  рухаючи головою, перемістіть погляд вгору. Сфокусуйте погляд
+                  на тому, що ви бачите. Потім подивіться вниз. Сфокусуйте
+                  погляд на тому, що бачите. Переміщуйте погляд вгору та вниз 5
+                  раз. Повторіть цей цикл 3 рази.
+                </div>
               </div>
             </div>
           </div>
@@ -89,24 +114,237 @@
             <div class="slider__image">
               <img src="./img/4.png" alt="" />
             </div>
-            <div class="text-content">
-              <div class="slider__exercise-header">
-                <h3>Вправа 4</h3>
-                <div class="slider__exercise-name">Вдивляємося в темряву</div>
-              </div>
-              <div class="slider__exercise-description">
-                Обіпріться на лікті й закрийте очі. Закрийте очі
-                пальцями,вдивляючись в темряву. Розслабтеся побудьте в такому
-                положенні 1-3
-                хвилини.;sdfus;f;of;oipfjpklf]p[sdlf]\[gdl]\[fklbd]pfkb]dpf[lg
-                [fdl\f;lkbv'd\bk'dpfkbdfpkbfdk'bl;fkldk'fl]
+            <div
+              class="text-content__background"
+              data-action="4"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 4</h3>
+                  <div class="slider__exercise-name">
+                    Переміщуємо погляд по діагоналі
+                  </div>
+                </div>
+                <div class="slider__exercise-description">
+                  Дивіться прямо перед собою. Подивіться вниз і ліворуч. Потім
+                  подивіться по діагоналі - вгору і праворуч. Сфокусуйте погляд
+                  на тому, що бачите. Повторіть вправу 5 раз, після чого зробіть
+                  те ж саме в протилежний бік. Повторіть цей цикл 3 рази.
+                </div>
               </div>
             </div>
           </div>
+          <!-- slide5 -->
+          <div class="slider__exercise">
+            <div class="slider__image">
+              <img src="./img/4.png" alt="" />
+            </div>
+            <div
+              class="text-content__background"
+              data-action="5"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 5</h3>
+                  <div class="slider__exercise-name">Обертаємо очі по колу</div>
+                </div>
+                <div class="slider__exercise-description">
+                  Сядьте рівно і розслабтеся. Подивіться ліворуч та повільно
+                  обертайте очима за годинниковою стрілкою. Зробіть оберти 5
+                  разів, після чого подивіться праворуч і повільно обертайте
+                  очима проти годинникової стрілки. Зробіть оберти 5 разів.
+                  Повторіть цей цикл 3 рази.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide6 -->
+          <div class="slider__exercise">
+            <div class="slider__image">
+              <img src="./img/4.png" alt="" />
+            </div>
+            <div
+              class="text-content__background"
+              data-action="6"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 6</h3>
+                  <div class="slider__exercise-name">
+                    Фокусуємось на ближніх і дальніх об'єктах.
+                  </div>
+                </div>
+                <div class="slider__exercise-description">
+                  Сфокусуйте погляд на будь-якому предметі, розташованому в
+                  20-30 см від ваших очей. Потім подивіться вдалину. Сфокусуйте
+                  погляд на дальньому об'єкті та намагайтесь роздивитися його
+                  детально. Потім знов подивіться на ближній предмет. Фокусуйте
+                  погляд таким чином 5 раз. Повторіть цей цикл 3 рази.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide7 -->
+          <div class="slider__exercise">
+            <div class="slider__image">
+              <img src="./img/4.png" alt="" />
+            </div>
+            <div
+              class="text-content__background"
+              data-action="7"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 7</h3>
+                  <div class="slider__exercise-name">
+                    Вправа на концентрацію № 1
+                  </div>
+                </div>
+                <div class="slider__exercise-description">
+                  Сядьте рівно. Дивіться прямо. Пильно вдивіться в точку між
+                  бровами. Сфокусуйте свій погляд на тому, що ви бачите протягом
+                  декількох секунд. Подивіться прямо перед собою. Потім знову
+                  пильно вдивіться в точку між бровами. Змініть фокус таким
+                  чином 5 разів. Повторіть цей цикл 3 рази.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide8 -->
+          <div class="slider__exercise">
+            <div class="slider__image">
+              <img src="./img/4.png" alt="" />
+            </div>
+            <div
+              class="text-content__background"
+              data-action="8"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 8</h3>
+                  <div class="slider__exercise-name">
+                    Вправа на концентрацію № 2
+                  </div>
+                </div>
+                <div class="slider__exercise-description">
+                  Сядьте рівною Дивіться прямо перед собою. Подивіться на кінчик
+                  свого носа протягом декількох секунд, після чого подивіться
+                  прямо перед собою. Сфокусуйте погляд таким чином 5 разів.
+                  Повторіть цикл 3 рази.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide9 -->
+          <div class="slider__exercise">
+            <div class="slider__image">
+              <img src="./img/4.png" alt="" />
+            </div>
+            <div
+              class="text-content__background"
+              data-action="9"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 9</h3>
+                  <div class="slider__exercise-name">Масаж № 1</div>
+                </div>
+                <div class="slider__exercise-description">
+                  Закрийте очі. Міцно заплющте очі і потримайте їх в такому
+                  положенні 2-3 секунди. Розслабте м'язи навкруги очей. Міцно
+                  заплющте очі на 2-3 секунди ще раз. Повторіть так 10 раз.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide10 -->
+          <div class="slider__exercise">
+            <div class="slider__image">
+              <img src="./img/4.png" alt="" />
+            </div>
+            <div
+              class="text-content__background"
+              data-action="10"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправа 10</h3>
+                  <div class="slider__exercise-name">Масаж № 2</div>
+                </div>
+                <div class="slider__exercise-description">
+                  Закрийте очі. Тендітно торкніться повік пальцями і помасажуйте
+                  їх круговими рухами. Натискайте на повіки дуже тендітно, не
+                  натискайте на них надто сильно. Зробіть 10 кругових рухів:
+                  одразу за годинниковою стрілкою, потім проти годинникової
+                  стрілки.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- last slide -->
+          <div class="slider__exercise">
+            <div
+              class="text-content__background text-content__last"
+              data-action="11"
+              id="js-contentBackground"
+            >
+              <div class="text-content">
+                <div class="slider__exercise-header">
+                  <h3>Вправи закінчено</h3>
+                  <div class="slider__exercise-name">
+                    Натисніть кнопку для запуску таймера
+                  </div>
+                </div>
+              </div>
+              <button class="counterButton" id="js-counterButton">
+                ЗАКІНЧИТИ ВПРАВУ
+              </button>
+            </div>
+          </div>
         </div>
-
-        <button class="counterButton" id="js-counterButton">COUNTER</button>
       </div>
+    </div>
+    <button class="openExercise">START</button>
+    <div class="time-visual" id="js-visualTime">
+      <div class="counter hourCount">00</div>
+      <div class="colon">:</div>
+      <div class="counter minutCount">00</div>
+      <div class="colon" id="js-colon__sec">:</div>
+      <div class="counter secondCount" id="js-secondCount">00</div>
+    </div>
+    <form class="timer-settings" id="js-timerSettings">
+      <input
+        placeholder="hours"
+        name="hour"
+        type="text"
+        class="settings"
+        id="js-hours__settings"
+      />
+      <input
+        placeholder="minutes"
+        name="minut"
+        type="text"
+        class="settings"
+        id="js-minutes-settings"
+      />
+      <input
+        placeholder="seconds"
+        name="second"
+        type="text"
+        class="settings"
+        id="js-seconds-settings"
+      />
+    </form>
+    <div class="stop-reset__wrapper">
+      <button class="stop-reset" id="js-stopCounter">stop</button>
+      <button class="stop-reset" id="js-resetCounter">reset</button>
     </div>
 
     <!-- *sound -->
